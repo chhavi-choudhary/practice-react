@@ -36,3 +36,37 @@
     transform: rotate(360deg);
   }
 }
+
+.redText{
+  color: red;
+  font-weight:bolder;
+}
+.greenText{
+  color: green;
+}
+.yellow{
+  background-color:yellow;
+  color: violet;
+}
+.green{
+  background-color: green;
+  color:red;
+}
+.orange{
+  background-color: orange;
+  color: paleturquoise;
+}
+button{
+  width: 150px;
+  height: 35px;
+  margin: 10px;
+}
+
+.brown{
+  background-color: brown;
+  color:wheat;
+}
+.beige{
+  background-color: beige;
+  color: brown;
+}
