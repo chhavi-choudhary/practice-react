@@ -9,7 +9,7 @@ class HelloClass extends Component {
         console.log(this.props)
         return (
             <div>
-                <button onClick={this.myFunction}>Click Me!!</button>
+                <button onClick={this.myFunction}>Click Me Console!!</button>
                 <p>I am the class component!! I loke the number {this.props.age}!!</p>
             </div>
         )
