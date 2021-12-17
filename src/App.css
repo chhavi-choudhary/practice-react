@@ -70,3 +70,12 @@ button{
   background-color: beige;
   color: brown;
 }
+
+.toggle-button{
+background-color: teal;
+font-weight: bold;
+}
+
+.normal-button{
+background-color: coral;
+}
