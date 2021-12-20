@@ -27,33 +27,43 @@ const randomFood = () => {
   return foods[index];
 }
 
-
+const message=()=>{
+  alert("Click only when you want to use!!!")
+}
+function handleSubmit(e) {
+  e.preventDefault();
+  console.log('You clicked submit.');
+}
 
 
 function App() {
   return (
     <div className="App">
-      <h1>I like {randomFood()}</h1>
-      <h2>Login and signup</h2>
-      <div>
-        {isAuthenticated?<Login />:
-      <Signup />}
-      </div>
-      <div>
-          {hasError && <p>Something went wrong:((</p>}
-      </div>
-      <Toggle  active/>
-      <Toggle />
-    <p>Lets Play Component Game</p>
-    <UserDetails userInfo={homer}/>
-    <HelloClass age={14}/>
-    <Hello myBoolean userName="Manda" favoritecolor="green"/>
-    <Hello userName="Eszter" favoritecolor="blue"/>
-    <Click isOnline/>
-    <Click />
-    <Click idle/>
-    <Click2 />
-    <Click2 isOnline/>
+      <form onSubmit={handleSubmit}>
+        <button type="submit">Submit</button>
+      </form>
+        <button onClick={message}>Use Me!!!</button>
+          <h1>I like {randomFood()}</h1>
+           <h2>Login and signup</h2>
+          <div>
+            {isAuthenticated?<Login />:
+            <Signup />}
+          </div>
+            <div>
+              {hasError && <p>Something went wrong:((</p>}
+            </div>
+              <Toggle  active/>
+              <Toggle />
+              <p>Lets Play Component Game</p>
+              <UserDetails userInfo={homer}/>
+              <HelloClass age={14}/>
+              <Hello myBoolean userName="Manda" favoritecolor="green"/>
+              <Hello userName="Eszter" favoritecolor="blue"/>
+              <Click isOnline/>
+              <Click />
+              <Click idle/>
+              <Click2 />
+              <Click2 isOnline/>
     </div>
   );
 }
